@@ -1,0 +1,92 @@
+/* Reset and base styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("bg-img/blue-mount.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Layout grid */
+.grid-container {
+  display: grid;
+  grid-template-rows: 6rem auto 6rem;
+  height: 100vh;
+}
+
+/* Top navigation */
+.nav-top {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+/* Bottom navigation */
+.nav-bot {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+/* Main section background */
+.text-bg {
+  background-color: rgba(198, 198, 198, 0.9);
+  margin: 0 auto;
+  width: 75%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Inner content grid */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* Individual column blocks */
+.column {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Rounded, styled buttons */
+button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 30px; /* 👈 rounder buttons */
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+button:hover {
+  background-color: white;
+  color: #333;
+  border: 1px solid #333;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .text-bg {
+    width: 70%;
+    padding: 1rem;
+  }
+}
